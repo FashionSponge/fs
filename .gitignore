@@ -1,0 +1,15 @@
+#in project's root
+
+$ cat .gitignore
+
+*~     # no files with ending ~
+*.htc
+*.log
+*.sql
+
+/vendor
+.env
+/NOTES
+/tests
+/node_modules
+
