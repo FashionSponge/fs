@@ -1,3 +1,25 @@
+## Laravel 5 clean install
+
+After installing clean version from Offical website,
+I had issues with running it.
+
+In new version php artisan serve command was removed 
+[https://github.com/laravel/framework/issues/6474](https://github.com/laravel/framework/issues/6474)
+
+I couldn't access the first page, it was blank, no errors logged - not in Apache nor in Laravel logs.
+
+Finally I tried a method found at [mattstauffer.co](http://mattstauffer.co/blog/upgrading-from-laravel-4-to-laravel-5)
+
+php -S localhost:8000 -t public/
+
+It still didn't work, I had to remove file storage/framework/compiled.php
+Tried to access http://localhost:8000 - but was still blank page.
+I checked routes, so I tried accessing home page:
+http://localhost:8000/home
+I was redirected to login page and from there I could finally go to Laravel 'home' page.
+Yey.
+
+
 ## Laravel PHP Framework
 
 [![Build Status](https://travis-ci.org/laravel/framework.svg)](https://travis-ci.org/laravel/framework)
