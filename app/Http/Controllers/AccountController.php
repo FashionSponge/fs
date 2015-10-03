@@ -13,7 +13,8 @@ class AccountController extends Controller {
 	 * @return Response
 	 */
 	public function index()
-	{
+	{ 
+		return view('pages.account');
 		//
 	}
 
@@ -44,8 +45,8 @@ class AccountController extends Controller {
 	 * @return Response
 	 */
 	public function show($id)
-	{
-		//
+	{ 
+		return "This is the id that need to be stored " . $id . "<br>"; 
 	}
 
 	/**
